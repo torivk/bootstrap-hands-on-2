@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Hands-on 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <p class="h1">Background Utilities</p>
+    <div class="container w-25 ms-2">
+        <div class="row bg-primary text-white">
+            <div class="col p-2">This is default primary background</div>
+        </div>
+        <div class="row bg-secondary text-white bg-opacity-75">
+            <div class="col p-2">This is 75% opacity secondary background</div>
+        </div>
+        <div class="row bg-info bg-opacity-50 text-white">
+            <div class="col p-2">This is 50% opacity info background</div>
+        </div>
+        <div class="row bg-danger bg-success bg-opacity-25">
+            <div class="col p-2">This is 25% danger success background</div>
+        </div>
+        <div class="row bg-success bg-opacity-10">
+            <div class="col p-2">This is 10% opacity success background</div>
+        </div>
+    </div>
+    <p class="h1">Border Utilities</p>
+    <div class="w-50">
+        <img src="cat1.jpg" alt="Cute Cat" class="border border-2 border-danger border-start-0 border-end-0 w-25 ms-3">
+        <img src="cat1.jpg" alt="Cute Cat" class="border border-2 border-danger rounded-circle w-25 ms-3">
+        <img src="cat1.jpg" alt="Cute Cat" class="border border-2 border-danger border-end-0 w-25 ms-3">
+    </div>
+    <p class="h1">Color Utilities</p>
+    <table class="table table-bordered table-dark table-striped table-hover w-50">
+        <thead class="border-bottom border-2">
+            <tr>
+                <th class="w-50">Result</th>
+                <th class="w-50">Class Utilities</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="text-primary">Primary Default Text</td>
+                <td>text-primary</td>
+            </tr>
+            <tr>
+                <td class="text-danger text-opacity-50">Danger with 50% opacity</td>
+                <td>text-danger text-opacity-50</td>
+            </tr>
+            <tr>
+                <td class="text-success text-opacity-25">Success with 25% opacity</td>
+                <td>text-success text-opacity-25</td>
+            </tr>
+            <tr>
+                <td class="text-light text-opacity-75">Light with 75% opacity</td>
+                <td>text-light text-opacity-75</td>
+            </tr>
+            <tr>
+                <td class="text-muted">This is muted text</td>
+                <td>text-muted</td>
+            </tr>
+        </tbody>
+    </table>
+    <p class="h1">Display Block vs Block</p>
+    <div class="w-50 ms-4">
+        <div class="row row-cols-1">
+            <div class="col bg-primary bg-opacity-50 border border-1 p-2">
+                <img src="cat1.jpg" alt="Cute Cat" class="w-25">
+                <img src="cat2.jpg" alt="Cute Cat 2" class="w-25">
+            </div>
+            <div class="col bg-secondary bg-opacity-50 border border-1 p-2">
+                <img src="cat2.jpg" alt="Cute Cat 2" class="w-25">
+            </div>
+            <div class="col bg-secondary bg-opacity-50 border border-1 p-2 mb-2">
+                <img src="cat1.jpg" alt="Cute Cat" class="w-25">
+            </div>
+        </div>
+    </div>
+    <p class="h3">Hide first image in small screen</p>
+    <div class="w-50 ms-4">
+        <div class="row row-cols-1">
+            <div class="col bg-success bg-opacity-50 border border-1 p-2">
+                <img src="cat2.jpg" alt="Cute Cat 2" class="w-25 d-sm-none d-md-inline-block">
+                <img src="cat1.jpg" alt="Cute Cat" class="w-25">
+            </div>
+        </div>
+    </div>
+    <p class="h3">Visible two image in medium screen only</p>
+    <div class="w-50 ms-4">
+        <div class="row row-cols-1">
+            <div class="col bg-warning bg-opacity-50 border border-1 p-2">
+                <img src="cat2.jpg" alt="Cute Cat 2" class="w-25 d-none d-md-inline-block d-lg-none">
+                <img src="cat1.jpg" alt="Cute Cat" class="w-25 d-none d-md-inline-block d-lg-none">
+            </div>
+        </div>
+    </div>
+    <p class="h3">Second image displayed only on small screen</p>
+    <div class="w-50 ms-4">
+        <div class="row row-cols-1">
+            <div class="col bg-dark border border-1 p-2">
+                <img src="cat2.jpg" alt="Cute Cat 2" class="w-25">
+                <img src="cat1.jpg" alt="Cute Cat" class="w-25 d-sm-none d-md-inline-block">
+            </div>
+        </div>
+    </div>
+    <p class="h3">Output for medium to xxl screen</p>
+    <div class="w-50 ms-4 mb-3">
+        <div class="row row-cols-1">
+            <div class="col bg-dark border border-1 p-2">
+                <img src="cat1.jpg" alt="Cute Cat" class="w-25 d-none d-md-inline-block">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
